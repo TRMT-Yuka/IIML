@@ -279,3 +279,6 @@
 2024-04-06 01:56:24,538 - MMSA [INFO] - TRAIN-(dicmor) [1/5/6] >> loss: 4.1686  Acc_2: 0.6739  F1_score: 0.6427  Acc_7: 0.4692  MAE: 0.7493 
 2024-04-06 01:56:39,275 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.6704  F1_score: 0.6515  Acc_7: 0.4703  MAE: 0.7218  Loss: 0.7218 
 2024-04-06 01:57:12,488 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.6681  F1_score: 0.6459  Acc_7: 0.4372  MAE: 0.7816  Loss: 0.7807 
+2024-04-06 02:03:36,193 - MMSA [INFO] - TRAIN-(dicmor) [2/6/6] >> loss: 3.9912  Acc_2: 0.6873  F1_score: 0.6612  Acc_7: 0.4778  MAE: 0.7331 
+2024-04-06 02:03:51,150 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.6655  F1_score: 0.6484  Acc_7: 0.4586  MAE: 0.7409  Loss: 0.7409 
+2024-04-06 02:04:24,974 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.6467  F1_score: 0.6234  Acc_7: 0.4299  MAE: 0.7925  Loss: 0.7920 

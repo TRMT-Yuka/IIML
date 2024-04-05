@@ -7,7 +7,6 @@ from .glow import Glow, ZeroConv2d, gaussian_log_p
 import numpy as np
 from .rcan import Group
 from random import sample
-import random # added by trmt on 2024/4/4
 
 class MSE(nn.Module):
     def __init__(self):
@@ -133,8 +132,7 @@ class DICMOR(nn.Module):
                                   embed_dropout=self.embed_dropout,
                                   attn_mask=self.attn_mask)
 
-    def forward(self, text, audio, video, label=None, num_modal=None, missing_weights=None): #added by trmt on 24/4/4
-    # def forward(self, text, audio, video, label=None, num_modal=None):
+    def forward(self, text, audio, video, label=None, num_modal=None):
         if self.use_bert:
             with torch.no_grad():
                 text = self.text_model(text)
@@ -223,18 +221,7 @@ class DICMOR(nn.Module):
 
         #  random select modality
         modal_idx = [0, 1, 2]  # (0:text, 1:vision, 2:audio)
-        # ava_modal_idx = sample(modal_idx, num_modal)  # sample available modality
-
-        #========================================================== ↓↓↓ added by trmt on 24/4/3
-
-        if missing_weights == None:
-            ava_modal_idx = sample(modal_idx, num_modal)  # sample available modality
-        else:
-            ava_modal_idx = random.choices(modal_idx, missing_weights, k=num_modal)
-
-        #========================================================== ↑↑↑ added by trmt on 24/4/3
-
-
+        ava_modal_idx = sample(modal_idx, num_modal)  # sample available modality
         if num_modal == 1:  # one modality is available
             if ava_modal_idx[0] == 0:  # has text
                 proj_x_v = self.flow_v.reverse(z_l, reconstruct=True).squeeze(-1).detach()
