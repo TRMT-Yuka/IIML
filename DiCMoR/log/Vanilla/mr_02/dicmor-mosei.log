@@ -1,0 +1,45 @@
+2024-04-03 15:25:01,593 - MMSA [INFO] - train samples: (16326,)
+2024-04-03 15:25:03,157 - MMSA [INFO] - valid samples: (1871,)
+2024-04-03 15:25:04,696 - MMSA [INFO] - test samples: (4659,)
+2024-04-03 15:30:20,636 - MMSA [INFO] - TRAIN-(dicmor) [1/1/1] >> loss: 4.571  Acc_2: 0.9191  F1_score: 0.9179  Acc_7: 0.8529  MAE: 0.2305 
+2024-04-03 15:30:31,527 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.7879  F1_score: 0.7874  Acc_7: 0.5152  MAE: 0.5873  Loss: 0.5872 
+2024-04-03 15:30:57,947 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.7977  F1_score: 0.7973  Acc_7: 0.4943  MAE: 0.6014  Loss: 0.6010 
+2024-04-03 15:36:15,073 - MMSA [INFO] - TRAIN-(dicmor) [1/2/1] >> loss: 3.8973  Acc_2: 0.9209  F1_score: 0.9195  Acc_7: 0.8571  MAE: 0.2310 
+2024-04-03 15:36:26,335 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.7858  F1_score: 0.7828  Acc_7: 0.5152  MAE: 0.5735  Loss: 0.5734 
+2024-04-03 15:36:52,892 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.7936  F1_score: 0.7935  Acc_7: 0.5040  MAE: 0.5984  Loss: 0.5988 
+2024-04-03 15:42:19,793 - MMSA [INFO] - TRAIN-(dicmor) [1/3/1] >> loss: 3.5678  Acc_2: 0.9140  F1_score: 0.9123  Acc_7: 0.8476  MAE: 0.2412 
+2024-04-03 15:42:31,943 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8178  F1_score: 0.8142  Acc_7: 0.5126  MAE: 0.5720  Loss: 0.5720 
+2024-04-03 15:43:00,433 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8063  F1_score: 0.8035  Acc_7: 0.5005  MAE: 0.5978  Loss: 0.5981 
+2024-04-03 15:48:27,472 - MMSA [INFO] - TRAIN-(dicmor) [1/4/1] >> loss: 3.3566  Acc_2: 0.9266  F1_score: 0.9252  Acc_7: 0.8640  MAE: 0.2224 
+2024-04-03 15:48:40,027 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8011  F1_score: 0.7953  Acc_7: 0.5168  MAE: 0.5860  Loss: 0.5859 
+2024-04-03 15:49:08,506 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8054  F1_score: 0.8002  Acc_7: 0.5080  MAE: 0.5977  Loss: 0.5986 
+2024-04-03 15:54:33,674 - MMSA [INFO] - TRAIN-(dicmor) [2/5/1] >> loss: 3.1878  Acc_2: 0.9280  F1_score: 0.9268  Acc_7: 0.8681  MAE: 0.2185 
+2024-04-03 15:54:46,262 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8164  F1_score: 0.8136  Acc_7: 0.5206  MAE: 0.5683  Loss: 0.5682 
+2024-04-03 15:55:13,943 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8030  F1_score: 0.7989  Acc_7: 0.5040  MAE: 0.5964  Loss: 0.5953 
+2024-04-03 16:00:43,932 - MMSA [INFO] - TRAIN-(dicmor) [1/6/1] >> loss: 3.0612  Acc_2: 0.9288  F1_score: 0.9273  Acc_7: 0.8683  MAE: 0.2171 
+2024-04-03 16:00:56,749 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8011  F1_score: 0.7923  Acc_7: 0.5072  MAE: 0.5942  Loss: 0.5941 
+2024-04-03 16:01:25,123 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8104  F1_score: 0.8054  Acc_7: 0.5072  MAE: 0.5895  Loss: 0.5894 
+2024-04-03 16:06:51,233 - MMSA [INFO] - TRAIN-(dicmor) [2/7/1] >> loss: 3.0511  Acc_2: 0.9248  F1_score: 0.9231  Acc_7: 0.8625  MAE: 0.2261 
+2024-04-03 16:07:03,969 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8004  F1_score: 0.7942  Acc_7: 0.5142  MAE: 0.5767  Loss: 0.5767 
+2024-04-03 16:07:32,052 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8074  F1_score: 0.8031  Acc_7: 0.5029  MAE: 0.5922  Loss: 0.5913 
+2024-04-03 16:13:02,542 - MMSA [INFO] - TRAIN-(dicmor) [3/8/1] >> loss: 2.8153  Acc_2: 0.9238  F1_score: 0.9220  Acc_7: 0.8592  MAE: 0.2243 
+2024-04-03 16:13:15,478 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8039  F1_score: 0.8014  Acc_7: 0.5163  MAE: 0.5778  Loss: 0.5778 
+2024-04-03 16:13:43,909 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8010  F1_score: 0.8008  Acc_7: 0.5162  MAE: 0.5814  Loss: 0.5810 
+2024-04-03 16:19:10,927 - MMSA [INFO] - TRAIN-(dicmor) [4/9/1] >> loss: 2.6855  Acc_2: 0.9267  F1_score: 0.9252  Acc_7: 0.8633  MAE: 0.2233 
+2024-04-03 16:19:23,666 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8095  F1_score: 0.8036  Acc_7: 0.5232  MAE: 0.5735  Loss: 0.5734 
+2024-04-03 16:19:51,848 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8052  F1_score: 0.7995  Acc_7: 0.5070  MAE: 0.5982  Loss: 0.5968 
+2024-04-03 16:25:20,313 - MMSA [INFO] - TRAIN-(dicmor) [5/10/1] >> loss: 2.5772  Acc_2: 0.9277  F1_score: 0.9266  Acc_7: 0.8663  MAE: 0.2162 
+2024-04-03 16:25:33,337 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8227  F1_score: 0.8191  Acc_7: 0.5297  MAE: 0.5624  Loss: 0.5623 
+2024-04-03 16:26:01,945 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8008  F1_score: 0.7952  Acc_7: 0.5001  MAE: 0.6024  Loss: 0.6019 
+2024-04-03 16:31:31,981 - MMSA [INFO] - TRAIN-(dicmor) [1/11/1] >> loss: 2.4525  Acc_2: 0.9235  F1_score: 0.9219  Acc_7: 0.8642  MAE: 0.2196 
+2024-04-03 16:31:44,754 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8060  F1_score: 0.7984  Acc_7: 0.5040  MAE: 0.5814  Loss: 0.5812 
+2024-04-03 16:32:13,336 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8060  F1_score: 0.8004  Acc_7: 0.4982  MAE: 0.5947  Loss: 0.5955 
+2024-04-03 16:37:41,403 - MMSA [INFO] - TRAIN-(dicmor) [2/12/1] >> loss: 2.332  Acc_2: 0.9236  F1_score: 0.9220  Acc_7: 0.8619  MAE: 0.2247 
+2024-04-03 16:37:54,377 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8011  F1_score: 0.7937  Acc_7: 0.5222  MAE: 0.5782  Loss: 0.5782 
+2024-04-03 16:38:23,404 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.7986  F1_score: 0.7918  Acc_7: 0.4973  MAE: 0.5963  Loss: 0.5956 
+2024-04-03 16:43:52,694 - MMSA [INFO] - TRAIN-(dicmor) [3/13/1] >> loss: 2.2189  Acc_2: 0.9213  F1_score: 0.9197  Acc_7: 0.8599  MAE: 0.2240 
+2024-04-03 16:44:05,693 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8060  F1_score: 0.8016  Acc_7: 0.5163  MAE: 0.5763  Loss: 0.5764 
+2024-04-03 16:44:34,285 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.7939  F1_score: 0.7913  Acc_7: 0.5033  MAE: 0.6009  Loss: 0.6008 
+2024-04-03 16:50:03,763 - MMSA [INFO] - TRAIN-(dicmor) [4/14/1] >> loss: 2.1144  Acc_2: 0.9243  F1_score: 0.9229  Acc_7: 0.8640  MAE: 0.2196 
+2024-04-03 16:50:16,952 - MMSA [INFO] - VAL-(dicmor) >>  Acc_2: 0.8164  F1_score: 0.8122  Acc_7: 0.5136  MAE: 0.5729  Loss: 0.5731 
+2024-04-03 16:50:45,681 - MMSA [INFO] - TEST-(dicmor) >>  Acc_2: 0.8024  F1_score: 0.7968  Acc_7: 0.5050  MAE: 0.6012  Loss: 0.6005 
