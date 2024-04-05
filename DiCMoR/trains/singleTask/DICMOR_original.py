@@ -63,20 +63,14 @@ class DICMOR():
                     # forward
                     miss_2 = [0.1, 0.2, 0.3, 0.5, 0.7, 0.9, 1.0]
                     miss_1 = [0.1, 0.2, 0.3, 0.2, 0.1, 0.0, 0.0]
-
-                    # added by trmt on 24/4/4
                     if miss_two / (np.round(len(dataloader['train']) / 10) * 10) < miss_2[int(self.args.mr*10-1)]:  # missing two modal
-                        outputs = model(text, audio, vision, labels, num_modal=1, missing_weights=self.args.missing_weights)
-                        # outputs = model(text, audio, vision, labels, num_modal=1)
+                        outputs = model(text, audio, vision, labels, num_modal=1)
                         miss_two += 1
                     elif miss_one / (np.round(len(dataloader['train']) / 10) * 10) < miss_1[int(self.args.mr*10-1)]:  # missing one modal
-                        outputs = model(text, audio, vision, labels, num_modal=2, missing_weights=self.args.missing_weights)
-                        # outputs = model(text, audio, vision, labels, num_modal=2)
+                        outputs = model(text, audio, vision, labels, num_modal=2)
                         miss_one += 1
                     else:  # no missing
-                        outputs = model(text, audio, vision, labels, num_modal=3, missing_weights=self.args.missing_weights)
                         outputs = model(text, audio, vision, labels, num_modal=3)
-
 
                     # compute loss
                     task_loss = self.criterion(outputs['M'], labels)
@@ -115,12 +109,8 @@ class DICMOR():
             test_results = self.do_test(model, dataloader['test'], mode="TEST")
             cur_valid = val_results[self.args.KeyEval]
             scheduler.step(val_results['Loss'])
-
             # save each epoch model
-            # added by trmt on 24/4/4
-            model_save_path = self.args.model_save_dir + str(epochs) + '.pth'
-            # model_save_path = 'pt/' + str(epochs) + '.pth'
-
+            model_save_path = 'pt/' + str(epochs) + '.pth'
             torch.save(model.state_dict(), model_save_path)
             # save best model
             isBetter = cur_valid <= (best_valid - 1e-6) if min_or_max == 'min' else cur_valid >= (best_valid + 1e-6)
@@ -169,19 +159,14 @@ class DICMOR():
                         labels = labels.view(-1, 1)
                     miss_2 = [0.1, 0.2, 0.3, 0.5, 0.7, 0.9, 1.0]
                     miss_1 = [0.1, 0.2, 0.3, 0.2, 0.1, 0.0, 0.0]
-
-                    # added by trmt on 24/4/3 missing_weights
                     if miss_two / (np.round(len(dataloader) / 10) * 10) < miss_2[int(self.args.mr * 10 - 1)]:  # missing two modal
-                        outputs = model(text, audio, vision, labels, num_modal=1, missing_weights=self.args.missing_weights)
-                        # outputs = model(text, audio, vision, labels, num_modal=1)
+                        outputs = model(text, audio, vision, labels, num_modal=1)
                         miss_two += 1
                     elif miss_one / (np.round(len(dataloader) / 10) * 10) < miss_1[int(self.args.mr * 10 - 1)]:  # missing one modal
-                        outputs = model(text, audio, vision, labels, num_modal=2, missing_weights=self.args.missing_weights)
-                        # outputs = model(text, audio, vision, labels, num_modal=2)
+                        outputs = model(text, audio, vision, labels, num_modal=2)
                         miss_one += 1
                     else:  # no missing
-                        outputs = model(text, audio, vision, labels, num_modal=3, missing_weights=self.args.missing_weights)
-                        # outputs = model(text, audio, vision, labels, num_modal=3)
+                        outputs = model(text, audio, vision, labels, num_modal=3)
 
                     if return_sample_results:
                         ids.extend(batch_data['id'])
