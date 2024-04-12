@@ -75,7 +75,7 @@ class DICMOR():
                         miss_one += 1
                     else:  # no missing
                         outputs = model(text, audio, vision, labels, num_modal=3, missing_weights=self.args.missing_weights)
-                        outputs = model(text, audio, vision, labels, num_modal=3)
+                        # outputs = model(text, audio, vision, labels, num_modal=3)
 
 
                     # compute loss

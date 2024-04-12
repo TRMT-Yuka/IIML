@@ -18,14 +18,17 @@ from run import DICMOR_run_Missing_Weights
 # task_name = "Vanilla"
 task_name = "IIML"
 
+mr_n_l = [7]
+print("mr:",mr_n_l)
+mws_l = [622,262,226]#[811,181,118,622,262,226,433,343,334]:#本来やるべきところ
+print("mws:",mws_l)
 
 def get_missing_weights(mws):
     l,v,a = str(mws)
     return [int(l)/10,int(v)/10,int(a)/10]
 
-for mr_n in [7]:
-    # for mws in [811,181,118,622,262,226,433,343,334]:#本来やるべきところ
-    for mws in [811,181,118]:
+for mr_n in mr_n_l:
+    for mws in mws_l:
         DICMOR_run_Missing_Weights(model_name='dicmor',
                    dataset_name='mosei',
                    seeds=[1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1119],
